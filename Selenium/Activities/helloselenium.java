@@ -1,0 +1,24 @@
+package selenium;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class helloselenium {
+
+	public static void main(String[] args) {
+	
+		    // Create a new instance of the Firefox driver
+		    WebDriver driver = new FirefoxDriver();
+		    String title;
+		    // Open the browser
+		    driver.get("https://training-support.net");
+
+		    // Perform testing and assertions
+		    title=driver.getTitle();
+		    System.out.println("The title is: "+title);
+		    
+		    // Close the browser
+		    // Feel free to comment out the line below
+		    // so it doesn't close too quickly
+		    driver.quit();
+	}
+
+}
